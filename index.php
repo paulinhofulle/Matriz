@@ -9,8 +9,8 @@
 <body>
     
     <?php
-        $iLinha = rand(10, 30);
-        $iColuna = rand(10, 30);
+        $iLinha = 70;
+        $iColuna = 5;
         for ($i = 1; $i <= $iLinha; $i++) {
             for($j = 1; $j <= $iColuna; $j++) {
                 $aArray[$i][$j] = rand(0, 100);
@@ -30,6 +30,10 @@
         }     
           
         echo '</table>';
+
+        echo "Página: ". $_GET["pagina"] ."<br>";
+        echo "Cor: ". $_GET["cor"] ."<br>";
+        echo "Tamanho: ". $_GET["tamanho"] ."<br>";
     ?>
 
 </body>
